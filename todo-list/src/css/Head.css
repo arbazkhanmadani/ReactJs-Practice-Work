@@ -1,0 +1,13 @@
+h1{
+    color:rgb(38, 0, 255)
+}
+
+#btn{
+    background-color: red;
+    border: none;
+    outline: none;
+    width: 5%;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,47 @@
+
+Type of Routers =>
+
+BroserRouter = stores the current location in the browser's address bar using clean URLs and
+               navigates using the browser's built-in history stack.
+
+HashRouter   = is for use in web browsers when the URL should not (or cannot) be sent to the server for some reason
+               makes it possible to store the current location in the hash portion of the current URL,
+                so it is never sent to the server.
+
+MemoryRouter = stores its locations internally in an array. Unlike <BrowserHistory> and <HashHistory>, 
+                it isn't tied to an external source, like the history stack in a browser.
+                This makes it ideal for scenarios where you need complete control over the history stack, 
+                like testing.
+
+NativeRouter = is the recommended interface for running React Router in a React Native app.
+
+StaticRouter = is used to render a React Router web app in node. Provide the current location via the location prop.
+
+Route        = Routes are objects passed to the router creation functions:
+
+
+Compoments of Route =>
+
+1. errorElement =  When exceptions are thrown in loaders, actions, or component rendering, 
+                instead of the normal render path for your Routes (<Route element>), 
+                the error path will be rendered (<Route errorElement>) and the error made available with
+
+2. loder = Each route can define a "loader" function to provide data to the route element before it renders.
+
+3. lazy = Lazy routes are resolved on initial load and during the loading or submitting phase of a navigation or fetcher call.
+          You cannot lazily define route-matching properties (path, index, children, caseSensitive)
+          since we only execute your lazy route functions after we've matched known routes.
+
+
+
+We wrap our content first with <BrowserRouter>.
+
+Then we define our <Routes>. An application can have multiple <Routes>. Our basic example only uses one.
+
+<Route>s can be nested. The first <Route> has a path of / and renders the Layout component.
+
+The nested <Route>s inherit and add to the parent route. So the blogs path is combined with the parent and becomes /blogs.
+
+The Home component route does not have a path but has an index attribute. That specifies this route as the default route for the parent route, which is /.
+
+Setting the path to * will act as a catch-all for any undefined URLs. This is great for a 404 error page.

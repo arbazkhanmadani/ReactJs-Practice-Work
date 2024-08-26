@@ -1,0 +1,16 @@
+use Layout Effect Hook
+--------------------------------------
+
+1.Works similar to useEffect, but instead gets called before view gets mounted.
+
+Difference between useEffect and useLayoutEffect:
+
+1.useEffect gets called when the view appears or mounted. [At the time of moumting]
+2.useLayoutEffect gets called before the view appears or mounted. [After the mounting]
+T
+
+his can be useful when needing to show list of items instantly upon screen display,
+without it causing a small blink/flash.
+
+
+Warning: React official docs say: “useLayoutEffect can hurt performance. Prefer useEffect when possible.”

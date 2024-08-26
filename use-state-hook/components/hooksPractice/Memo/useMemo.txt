@@ -1,0 +1,17 @@
+React useMemo Hook
+--------------------------------
+
+1.The React useMemo Hook returns a memoized value.
+2.Think of memoization as caching a value so that it does not need to be recalculated.
+3.The useMemo Hook only runs when one of its dependencies update.
+4.This can improve performance.
+
+
+DIFFRENCE BTW USEEFFECT, USEMEMO AND USECALLBACK
+
+The useEffect, useMemo and useCallback Hooks are similar.
+The main difference is that - 
+
+1.useEffect dont return any value
+2.useMemo returns a "memoized value"
+3.useCallback returns a "memoized function".

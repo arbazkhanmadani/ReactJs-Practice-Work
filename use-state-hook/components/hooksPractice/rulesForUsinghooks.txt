@@ -1,0 +1,11 @@
+Hooks are a new addition in React 16.8. 
+They let you use state and other React features without writing a class
+
+
+1.Only Call Hooks at the Top Level
+Don’t call Hooks inside loops, conditions, or nested functions. 
+
+2.Only Call Hooks from React Functions
+Don’t call Hooks from regular JavaScript functions
+
+3.Call Hooks from custom Hooks.

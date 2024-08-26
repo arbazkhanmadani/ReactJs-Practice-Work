@@ -1,0 +1,10 @@
+React useCallback Hoo
+--------------------------
+
+
+1.The React useCallback Hook returns a memoized callback function.
+2.Think of memoization as caching a value so that it does not need to be recalculated.
+3.This allows us to isolate resource intensive functions so that 
+  they will not automatically run on every render.
+4.The useCallback Hook only runs when one of its dependencies update.
+5.This can improve performance.
